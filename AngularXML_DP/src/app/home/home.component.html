@@ -1,0 +1,58 @@
+<div class="pageBody">
+
+
+    <div class="container" style="padding:20px">
+
+      <div class="container">
+        <table class="none">
+          <tr>
+            <td>
+              <p style="font-family: 'Times New Roman', Times, serif; font-size: 40px;font-weight: bold;color: #73AD21">
+                XML Data Processor</p>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div style="width: 100%; height: 25px; border-bottom: 4px solid #73AD21;"></div>
+      <div style="width: 100%; height: 25px; border-bottom: 0px;"></div>
+
+      <div class="container" style="padding: 10px">
+        <table class="none">
+          <tr>
+            <td>
+              <p style="font-family: 'Times New Roman', Times, serif; font-size: 30px;font-weight: bold;color: #73AD21">
+                Files</p>
+            </td>
+            <td>
+              <button style="float:right; align-items: center" class="btn btn-success btn-s" routerLink="/upload"
+                routerLinkActive="active" (click)="ListFiles()">New</button>
+            </td>
+          </tr>
+        </table>
+
+        <table class="file" style="table-layout: fixed">
+          <tr class="fileTr">
+            <th  class="fileTd1">File Path</th>
+            <th class="fileTd">File Name</th>
+            <th class="fileTd" colspan="3"> Actions</th>
+          </tr>
+          <tr class="fileTr" *ngFor="let value of values1; let i=index">
+            <td style="word-wrap: break-word" class="fileTd1" type="text" id="{{'filepath'+i}}">{{keys1[i]}}</td>
+            <td style="word-wrap: break-word" class="fileTd" id="{{'name'+i}}">{{value}}</td>
+            <td style="word-wrap: break-word" class="fileTd2"><button (click)="View(i)" class="btn btn-success" routerLink="/view"
+                routerLinkActive="active"><i class="fa fa-eye"></i></button></td>
+            <td style="word-wrap: break-word" class="fileTd2"><button (click)="Upload(i)" class="btn btn-success" routerLink="/crud"
+                routerLinkActive="active"><i class="fa fa-edit"></i></button></td>
+            <td style="word-wrap: break-word" class="fileTd2"><button (click)="Delete(i)" class="btn btn-success"><i class="fa fa-trash"></i></button>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    </div>
+
+  
+</div>
+
+<router-outlet></router-outlet>

@@ -1,0 +1,28 @@
+<div class="pageBody" style="padding: 10px">
+        <p style="font-family: 'Times New Roman', Times, serif; font-size: 30px;text-align:left;font-weight: bold;color: #73AD21">
+                Search File</p>
+    <div class="wrapper">
+        
+        <div class="container" style="padding: 10px">
+            <div class="wrapper">
+            <table *ngIf="!show" align="center">
+                <tr>
+                    <td id="nameTd">Enter Filename:</td>                
+                    <td contenteditable="true" id="searchTd"> </td>
+                    <td id="buttonTd"><button class="btn btn-success" *ngIf="!show" (click)="search()">Submit</button></td>
+                </tr>
+            </table>
+
+            <table align="center" *ngIf="show">
+                <tr>
+                    <td>{{dataa}}</td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div style="width: 100%; height: 10px; border-bottom: 0px;"></div>
+
+        <button *ngIf="show" (click)="back()" class="btn btn-success" routerLink="/search"
+            routerLinkActive="active">Back</button>
+    </div>
+</div>

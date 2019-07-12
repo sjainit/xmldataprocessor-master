@@ -1,0 +1,47 @@
+<div class="pageBody">
+  <div class="container" style="padding: 20px">
+    <div>
+      <table align="center" *ngIf="!show">
+        <thead>
+          <tr>
+            <th>TagName</th>
+            <th>TagValue</th>
+            <th>Xpath</th>
+            <th colspan="3"> Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let value of values; let i=index">
+            <td contenteditable="true" class="secondrow" id="{{'name'+i}}">{{value.tagName}}</td>
+            <td contenteditable="true" class="thirdrow" id="{{'value'+i}}">{{value.tagValue}}</td>
+            <td type="text" class="firstrow" id="{{'xpath'+i}}">{{keys[i]}}</td>
+            <td><button (click)="Add(i)" class="btn btn-success"><i class="fa fa-plus"></i></button></td>
+            <td><button (click)="Save(i,temp)" class="btn btn-success"><i class="fa fa-save"></i></button></td>
+            <td><button (click)="Delete(i)" class="btn btn-success"><i class="fa fa-trash"></i></button></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="wrapper">
+
+        <table align="center" *ngIf="show">
+          <tr>
+            <th>TagName</th>
+            <th>TagValue</th>
+          </tr>
+          <tr *ngFor="let value of Obj1keys; let i=index">
+            <td>{{value}}</td>
+            <td contenteditable="true" id="{{'values'+i}}"></td>
+          </tr>
+        </table>
+        <button *ngIf="show" (click)="Save(i,temp)" class="btn btn-success">Save</button>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper" style="padding: 10px">
+    <button (click)="SaveAs()" *ngIf="!show" class="btn btn-success" routerLink="/inputFileName"
+      routerLinkActive="active">Save As</button>
+    &nbsp;&nbsp;&nbsp;
+    <button routerLink="/home" routerLinkActive="active" class="btn btn-success">Back</button>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<company>
+<staffs>
+	<staff>
+		<firstname>anshul</firstname>
+		<lastname>sharma</lastname>
+		<nickname>AS</nickname>
+		<salary>100000</salary>
+		<address>
+			<Address1>Luxor Apartments, Kondapur</Address1>
+			<city>HYderabad</city>
+		</address>
+	</staff>
+	<staff>
+		<firstname>Neha</firstname>
+		<lastname>Mittal</lastname>
+		<nickname>NM</nickname>
+		<salary>200000</salary>
+	</staff>
+	<staff>
+		<firstname>Sarthak</firstname>
+		<lastname>Jain</lastname>
+		<nickname>SJ</nickname>
+		<salary>200000</salary>
+	</staff>
+</staffs>
+</company>
