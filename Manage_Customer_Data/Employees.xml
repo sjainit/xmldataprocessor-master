@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Employees>
+	<Employee>
+		<firstname>Sarthak</firstname>
+		<lastname>Jain</lastname>
+		<nickname>SJ</nickname>
+		<salary>100000</salary>
+	</Employee>
+	<Employee>
+		<firstname>Neha</firstname>
+		<lastname>Mittal</lastname>
+		<nickname>NM</nickname>
+		<salary>200000</salary>
+	</Employee>
+</Employees>

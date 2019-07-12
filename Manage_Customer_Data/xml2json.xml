@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<students>
+	<student>
+    		<age>33</age>
+    		<id>44</id>
+    		<name>JavaInterviewPoint</name>
+		<add> Ahmedabad </add>
+	</student>
+	<student>
+    		<age>20</age>
+    		<id>4</id>
+    		<name>Neha</name>
+		<add> Dehradhun </add>
+	</student>
+ </students>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<company>
+	<staff>
+		<fname>yong</fname>
+		<lname>mook kim</lname>
+		<nname>mkyong</nname>
+		
+	</staff>
+	<staff>
+		<fname>low</fname>
+		<lname>yin fong</lname>
+		<nname>fong fong</nname>
+		<sal>200000</sal>
+	</staff>
+</company>
